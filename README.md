@@ -82,7 +82,7 @@ This repository is organized chronologically, mirroring the cohort's progression
 
 ## ❤️ Credits & Acknowledgment
 
-This work is heavily inspired by the teaching of **Harkirat Singh** and the **100xDevs** community. 
+This work is heavily inspired by the teaching of **Rishabh**, **Harkirat Singh** and the **100xDevs** community. 
 
 *   **Original Material:** 100xDevs AI Cohort
 *   **Curated & Enhanced by:** [Akshat Shethia](https://www.linkedin.com/in/akshhat-shethia/)
