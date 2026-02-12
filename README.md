@@ -10,7 +10,7 @@
 
 *A comprehensive, deep-dive collection of notes from the 100xDevs AI Cohort, refined for clarity, depth, and intuition.*
 
-[**Explore the Notes**](#-modules--curriculum) · [**Download PDFs**](#-how-to-use) · [**Contribute**](#-contributing)
+[**Explore the Notes**](#-modules--curriculum) · [**Download PDFs**](#-how-to-use)
 
 ---
 
