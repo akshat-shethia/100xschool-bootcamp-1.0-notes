@@ -76,9 +76,7 @@ This repository is organized chronologically, mirroring the cohort's progression
 
 ## 🛠️ How to Use
 
-1.  **Browse Online:** The `README.md` files in each folder are rendered beautifully on GitHub.
-2.  **Offline Study:** Look for the **PDF versions** in each directory (or the dedicated `Readme_To_PDF` folders). These are perfect for highlighting and annotating on tablets.
-3.  **Run the Code:** The `Codes/` folder in each week contains the actual Python scripts and Jupyter Notebooks used to derive the notes.
+1.  **Offline Study:** Look for the **PDF versions** in each directory. These are perfect for highlighting and annotating on tablets.
 
 ---
 
