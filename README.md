@@ -70,7 +70,17 @@ This repository is organized chronologically, mirroring the cohort's progression
 - **Key Insight:** Tracing the journey of a sentence from raw text to numerical vectors. Why "Strawberry" has 3 Rs but models can't count them. Visualizing 768-dimensional semantic space.
 - **Reference:** `(Week 03) 31-01-2026` & `(Week 04) 07-02-2026`
 
-*(More modules added weekly as the cohort progresses...)*
+### 🔹 **Week 05: The Deep Learning Engine**
+> *The Math & Tools: Scalars, Vectors, Matrices, Tensors & PyTorch*
+- **Core Topics:** The Data Hierarchy (Scalar → Vector → Matrix → Tensor), Matrix Transformations, Matrix Multiplication (the universal engine), CPU vs. GPU parallelism, PyTorch Autograd, `nn.Module`, and the full Training Loop.
+- **Key Insight:** Every operation in Deep Learning — from a single neuron to Self-Attention — is secretly just a Matrix Multiplication. Seeing how `.backward()` automates the calculus that was done by hand in Week 02.
+- **Reference:** `(Week 05) 14-02-2026`
+
+### 🔹 **Week 06: Building & Training a Modern LLM**
+> *What Changed Since 2017 — and Why*
+- **Core Topics:** The Classic vs. Modern Transformer stack; the four architectural upgrades: **RMSNorm (Pre-Norm)**, **SwiGLU** activation, **RoPE** positional encoding, and **Grouped Query Attention (GQA)**. KV Cache mechanics, time/space complexity of attention, and the DeepSeek MLA spotlight.
+- **Key Insight:** Modern LLMs (LLaMA, Mistral, Gemma) aren't a new invention — they are the 2017 Transformer with four surgical engineering patches applied to fix training instability, memory walls, and poor generalization at scale.
+- **Reference:** `(Week 06) 21-02-2026`
 
 ---
 
