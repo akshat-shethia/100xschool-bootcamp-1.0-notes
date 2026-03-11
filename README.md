@@ -82,6 +82,18 @@ This repository is organized chronologically, mirroring the cohort's progression
 - **Key Insight:** Modern LLMs (LLaMA, Mistral, Gemma) aren't a new invention — they are the 2017 Transformer with four surgical engineering patches applied to fix training instability, memory walls, and poor generalization at scale.
 - **Reference:** `(Week 06) 21-02-2026`
 
+### 🔹 **Week 07: MiniLLM — Every Modern Component From Scratch**
+> *Theory → PyTorch: Building and Training a Decoder-Only LLM*
+- **Core Topics:** Full implementation of `RMSNorm`, `RoPE` (precompute + apply), `GroupedQueryAttention` (with `repeat_kv`), `SwiGLU` FFN, and the complete `TransformerBlock` / `MiniLLM` pipeline. Character-level tokenization, autoregressive training loop, gradient clipping, loss analysis, and temperature-controlled generation.
+- **Key Insight:** A 2.7M-parameter character-level model (`MiniLLM`) trained on Tiny Shakespeare to a final train loss of **1.02** in ~11 min on a Tesla T4 — demonstrating that the **architecture** of a modern 70B LLaMA is identical; only the *scale* differs. Classic overfitting curve (train↓, val↑ after step 1500) was observed firsthand, making regularization intuition concrete.
+- **Reference:** `(Week 07) 27-02-2026`
+
+### 🔹 **Week 08: From API Calls to Autonomous Agents**
+> *First Principles of the ReAct Pattern & Autonomous AI*
+- **Core Topics:** OpenRouter API setup, temperature & the stateless memory illusion, function calling (JSON schema → `tool_calls`), the **ReAct loop** (`THOUGHT → ACTION → OBSERVATION`), building a from-scratch ReAct agent (~60 lines), the Code Agent (file I/O + Python execution), native function calling vs. string parsing, and the "Gotchas" (context window explosion, hallucination spirals, `tk/s` as the key agent metric).
+- **Key Insight:** An Agent = **LLM + Tools + Loop** — and there is no magic. The same ~60-line Python pattern underlies Claude Code and Codex. The defining engineering challenge is the **Context Engineering Problem**: every ReAct iteration re-sends the *entire* conversation history, so prompt tokens compound from ~266 → 580 → 1200+ per iteration, making context compression strategies (RAG, summarization, sliding window) essential.
+- **Reference:** `(Week 08) 07-03-2026`
+
 ---
 
 ## 🛠️ How to Use
