@@ -94,6 +94,19 @@ This repository is organized chronologically, mirroring the cohort's progression
 - **Key Insight:** An Agent = **LLM + Tools + Loop** — and there is no magic. The same ~60-line Python pattern underlies Claude Code and Codex. The defining engineering challenge is the **Context Engineering Problem**: every ReAct iteration re-sends the *entire* conversation history, so prompt tokens compound from ~266 → 580 → 1200+ per iteration, making context compression strategies (RAG, summarization, sliding window) essential.
 - **Reference:** `(Week 08) 07-03-2026`
 
+### 🔹 **Week 09: Retrieval-Augmented Generation (RAG)**
+> *Build it. Break it. Fix it. — From First Principles to Production Pipelines*
+- **Core Topics:** The RAG Workflow (Retrieve-Augment-Generate), Recursive Chunking, Contextual Retrieval (Anthropic), Hybrid Search (BM25 + RRF), and the two-pass Reranking system.
+- **Key Insight:** LLMs are reasoning engines, not databases. RAG is the bridge that feeds them fresh, private knowledge without the unreliability of fine-tuning. Moving from "Naive RAG" to "Production RAG" requires balancing recall (Hybrid Search) with precision (Reranking).
+- **Reference:** `(Week 09) 13-03-2026`
+
+### 🔹 **Week 10: Why RAG Breaks & What Comes Next**
+> *Context Rot, Production Reality, and the Evolution of Retrieval Systems*
+- **Core Topics:** Context Rot (Attention Budget), The Distractors Problem (Needle in a Haystack), Surgical Context Engineering (The ChatGPT Memory Model), and the Vectorless Frontier (PageIndex).
+- **Key Insight:** Similarity $\neq$ Relevance. Large context windows introduce "Context Rot" where models lose signal in noise. The future is shifting from passive similarity search to active, reasoning-based navigation (PageIndex) and "Context Engineering" where we surgically control exactly what the model sees.
+- **Reference:** `(Week 10) 23-03-2026`
+
+
 ---
 
 ## 🛠️ How to Use
